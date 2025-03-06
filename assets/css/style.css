@@ -53,14 +53,14 @@ header a {
     padding: 15px 30px;
     display: inline-block;
     font-weight: bold;
-    background-color: purple;
-    color: #3bd6c6;
+    background-color: white;
+    color: #FFBF00;
     border: 1px solid black;
     box-shadow: 0 2px 2px black;
      
 }
 #menu a:hover {
-    background-color: white;
+    background-color: #67B7D1;
 }
 .active {
     font-family: "Sigmar", sans-serif;
