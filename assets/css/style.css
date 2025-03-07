@@ -101,3 +101,13 @@ h3 {
         color: white;
         margin: 20px;
     }
+.blocks button {
+    padding: 10px;
+    font-size: 20px;
+    color: #FFBF00;
+    font-family: "Sigmar", sans-serif;
+}
+.blocks button:hover {
+    background-color: #046169;
+
+}
