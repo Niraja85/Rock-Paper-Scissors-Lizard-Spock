@@ -73,7 +73,7 @@ header a {
     
 #icon {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
 h2 {
@@ -83,7 +83,7 @@ h3 {
     font-size: 30px;
 }
 .blocks {
-    /* Makes i t responsive without using media-query */
+    /* Makes it responsive without using media-query */
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
