@@ -146,3 +146,39 @@ h3 {
     top: 30px;
     right: -110px;
 }
+.result {
+    font-size: 40px;
+    color: #032f3c;
+}
+.result > p {
+    text-align: center;
+    font-weight: bold;
+}
+#rk > img {
+    width: 140px;
+}
+#pr > img {
+    width: 120px;
+}
+#sr > img {
+    width: 120px;
+}
+#lz > img {
+    width: 150px;
+}
+#sp > img {
+    width: 150px;
+}
+
+.options {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #ffff8f;
+}
+.option {
+    display:inline-block;
+    padding: 30px;
+    margin: 0 20px;
+    
+
+}
