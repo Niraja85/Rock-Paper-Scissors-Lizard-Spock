@@ -173,7 +173,7 @@ h3 {
     width: 100%;
 }
 .option:hover {
-    background: red;
+    background: #FFBF00;
 }
 #message {
     text-align: center;
