@@ -155,25 +155,10 @@ h3 {
     font-weight: bold;
     color: #032f3c;
 }
-#rk > img {
-    width: 140px;
-}
-#pr > img {
-    width: 120px;
-}
-#sr > img {
-    width: 120px;
-}
-#lz > img {
-    width: 150px;
-}
-#sp > img {
-    width: 150px;
-}
 
 .options {
     text-align: center;
-    margin: 50px 0;
+    margin: 30px 0;
     background-color: #ffff8f;
    
 }
@@ -184,8 +169,11 @@ h3 {
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+.option > img {
+    width: 100%;
+}
 .option:hover {
-    background: white;
+    background: red;
 }
 #message {
     text-align: center;
