@@ -153,6 +153,7 @@ h3 {
 .result > p {
     text-align: center;
     font-weight: bold;
+    color: #032f3c;
 }
 #rk > img {
     width: 140px;
@@ -174,11 +175,22 @@ h3 {
     text-align: center;
     margin: 50px 0;
     background-color: #ffff8f;
+   
 }
 .option {
     display:inline-block;
     padding: 30px;
-    margin: 0 20px;
-    
-
+    border: 5px solid #ffff8f;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.option:hover {
+    background: white;
+}
+#message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Sigmar", sans-serif ;
+    color: #032f3c;
 }
