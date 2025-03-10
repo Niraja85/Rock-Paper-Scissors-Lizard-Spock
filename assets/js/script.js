@@ -11,22 +11,35 @@ const scissor_div = document.getElementById("sr");
 const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
 
-// Added event listener to each icon to display the message.
-rock_div.addEventListener('click' , function(){
-    console.log("hey you clicked on rock");
-})
-paper_div.addEventListener('click' , function(){
-    console.log("hey you clicked on paper");
-})
-scissor_div.addEventListener('click' , function(){
-    console.log("hey you clicked on scissor");
-})
-lizard_div.addEventListener('click' , function(){
-    console.log("hey you clicked on lizard");
-})
-spock_div.addEventListener('click' , function(){
-    console.log("hey you clicked on spock");
-})
+function game(playerChoice){
+
+}
+function getComputerChoice(){
+    const choices = ['rock', 'paper', 'scissor', 'lizard', 'spock'];
+    const randomNumber = (Math.floor(Math.random() * 5));
+    return choices[randomNumber];   
+}
 
 
+
+
+function main(){
+  rock_div.addEventListener('click' , function(){
+    game("rock");
+   })
+  paper_div.addEventListener('click' , function(){
+    game("paper");
+   })
+  scissor_div.addEventListener('click' , function(){
+    game("scissor");
+   })
+  lizard_div.addEventListener('click' , function(){
+    game("lizard");
+  })
+  spock_div.addEventListener('click' , function(){
+    game("spock");
+  })
+}
+
+main();
 
