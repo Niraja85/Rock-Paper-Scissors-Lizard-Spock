@@ -28,50 +28,100 @@ startButton.addEventListener("click",function() {
     location.reload();
 
   });
-  //Adding eventlisteners to the icons for player's choices
+  //Adding Event listeners to the icons for player's choices
   rock_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("rock");
     getComputerChoice();
     game("rock");
+  });
+
   paper_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("paper");
     getComputerChoice();
     game("paper");
-  scissors_divcissors_div.addEventListener("click",function(){
+  });
+
+  scissors_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("scissors");
     getComputerChoice();
     game("scissors");
-  lizard_divizard_div.addEventListener("click",function(){
+  });
+
+  lizard_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("lizard");
     getComputerChoice();
     game("lizard");
+  });
+
   spock_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("spock");
     getComputerChoice();
     game("spock");        
-
   });
 
 // This function gives a random computer choice.
-function getComputerChoice(){
-    const choices = ['ROCK', 'PAPER', 'SCISSORS', 'LIZARD', 'SPOCK'];
-    const randomNumber = (Math.floor(Math.random() * 5));
-    return choices[randomNumber];   
-}
-
-function playerChoice(playIcon) {
-  switch(playIcon) {
-    case ("rock"):
-      document.getElementById("player-image").style.background="url(assets/images/rock.png)";
-      document.getElementById("player-image").style.backgroundSize="cover";
-      break;
+function getComputerChoice() {
+    
+  computerIcon = Math.floor(Math.random() * 5);
+ 
+  switch (computerIcon) {
+      case 0:
+          document.getElementById('computer-image').innerText = "";
+          document.getElementById('computer-image').style.background="url(assets/images/rock.png)";
+          document.getElementById('computer-image').style.backgroundSize="cover";
+          break;
+      case 1:
+          document.getElementById('computer-image').innerText = "";
+          document.getElementById('computer-image').style.background="url(assets/images/paper.png)";
+          document.getElementById('computer-image').style.backgroundSize="cover";
+          break;
+      case 2:
+          document.getElementById('computer-image').innerText = "";
+          document.getElementById('computer-image').style.background="url(assets/images/scissors.png)";
+          document.getElementById('computer-image').style.backgroundSize="cover";
+          break; 
+      case 3:
+          document.getElementById('computer-image').innerText = "";    
+          document.getElementById('computer-image').style.background="url(assets/images/lizard.png)";
+          document.getElementById('computer-image').style.backgroundSize="cover";
+          break;
+      case 4:
+          document.getElementById('computer-image').innerText = "";
+          document.getElementById('computer-image').style.background="url(assets/images/spock.png)";
+          document.getElementById('computer-image').style.backgroundSize="cover";
+          break;
   }
 }
+function playerChoice(playerIcon) {
+    switch (playerIcon) {
+        case "rock":
+            document.getElementById('player-image').style.background="url(assets/images/rock.png)";
+            document.getElementById('player-image').style.backgroundSize="cover";
+            break;
+        case "paper":
+            document.getElementById('player-image').style.background="url(assets/images/paper.png)";
+            document.getElementById('player-image').style.backgroundSize="cover";
+            break;
+        case "scissors":
+            document.getElementById('player-image').style.background="url(assets/images/scissors.png)";
+            document.getElementById('player-image').style.backgroundSize="cover";
+            break; 
+        case "lizard":
+            document.getElementById('player-image').style.background="url(assets/images/lizard.png)";
+            document.getElementById('player-image').style.backgroundSize="cover";
+            break;
+        case "spock":
+            document.getElementById('player-image').style.background="url(assets/images/spock.png)";
+            document.getElementById('player-image').style.backgroundSize="cover";
+            break;
+    }
+  }
+
 
  
 
