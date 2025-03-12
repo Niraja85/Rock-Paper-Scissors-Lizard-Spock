@@ -11,6 +11,52 @@ const scissors_div = document.getElementById("sr");
 const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
 
+// Adding event listener to start button
+let startButton = document.getElementById("start");
+
+startButton.addEventListener("click",function() {
+  start = 1;
+  document.getElementById("player-image").style.background = "";
+  document.getElementById("computer-image").style.background = "";
+  document.getElementById("start").style.display = "none";
+  document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
+
+  });
+  let resetButton = document.getElementById("reset");
+
+  resetButton.addEventListener("click",function(){
+    location.reload();
+
+  });
+  //Adding eventlisteners to the icons for player's choices
+  rock_div.addEventListener("click",function(){
+    if(start ===1);
+    playerChoice("rock");
+    getComputerChoice();
+    game("rock");
+  paper_div.addEventListener("click",function(){
+    if(start ===1);
+    playerChoice("paper");
+    getComputerChoice();
+    game("paper");
+  scissors_divcissors_div.addEventListener("click",function(){
+    if(start ===1);
+    playerChoice("scissors");
+    getComputerChoice();
+    game("scissors");
+  lizard_divizard_div.addEventListener("click",function(){
+    if(start ===1);
+    playerChoice("lizard");
+    getComputerChoice();
+    game("lizard");
+  spock_div.addEventListener("click",function(){
+    if(start ===1);
+    playerChoice("spock");
+    getComputerChoice();
+    game("spock");        
+
+  });
+
 // This function gives a random computer choice.
 function getComputerChoice(){
     const choices = ['ROCK', 'PAPER', 'SCISSORS', 'LIZARD', 'SPOCK'];
@@ -18,66 +64,16 @@ function getComputerChoice(){
     return choices[randomNumber];   
 }
 
+function playerChoice(playIcon) {
+  switch(playIcon) {
+    case ("rock"):
+      document.getElementById("player-image").style.background="url(assets/images/rock.png)";
+      document.getElementById("player-image").style.backgroundSize="cover";
+      break;
+  }
+}
+
  
 
 
-
-function game(playerChoice){
-    const computerChoice = getComputerChoice();
-switch (playerChoice + computerChoice){
-    case "ROCKSCISSORS":
-    case "ROCKLIZARD":
-    case "PAPERROCK":
-    case "PAPERSPOCK":
-    case "SCISSORSPAPER":
-    case "SCISSORSLIZARD":
-    case "LIZARDPAPER":
-    case "LIZARDSPOCK":
-    case "SPOCKSCISSORS":
-    case "SPOCKROCK":
-        ;
-    break;
-    case "SCISSORSROCK":
-    case "LIZARDROCK":
-    case "ROCKPAPER":
-    case "SPOCKPAPER":
-    case "PAPERSCISSORS":
-    case "LIZARDSCISSORS":
-    case "PAPERLIZARD":
-    case "SPOCKLIZARD":
-    case "SCISSORSSPOCK":
-    case "ROCKSPOCK":
-        Lose(playerChoice, computerChoice);
-    break;
-    case "ROCKROCK":
-    case "PAPERPAPER":
-    case "SCISSORSSCISSORS":
-    case "LIZARDLIZARD":
-    case "SPOCKSPOCK":
-        Draw(playerChoice, computerChoice);
-    break;                                                           
-
-}
-    
-}    
-
-function main(){
-  rock_div.addEventListener('click' , function(){
-    game("ROCK");
-   })
-  paper_div.addEventListener('click' , function(){
-    game("PAPER");
-   })
-  scissors_div.addEventListener('click' , function(){
-    game("SCISSORS");
-   })
-  lizard_div.addEventListener('click' , function(){
-    game("LIZARD");
-  })
-  spock_div.addEventListener('click' , function(){
-    game("SPOCK");
-  })
-}
-
-main();
 
