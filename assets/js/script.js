@@ -17,23 +17,6 @@ function getComputerChoice(){
     const randomNumber = (Math.floor(Math.random() * 5));
     return choices[randomNumber];   
 }
-function Win(playerChoice, computerChoice){
-    userScore++;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-    const playerWord = "player".fontsize(3);
-    result_p.innerHTML = `${(playerChoice)}(player) beats ${(computerChoice)}(comp). You WON !!`;
-}
-function Lose(playerChoice, computerChoice){
-  computerScore++;
-  computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `${(playerChoice)} loses to ${(computerChoice)}. You LOST !!`;
-}
-
-function Draw(playerChoice, computerChoice){
-  result_p.innerHTML = `${(playerChoice)} and  ${(computerChoice)}. Its a DRAW!!`;
-
-}
 
  
 
@@ -52,7 +35,7 @@ switch (playerChoice + computerChoice){
     case "LIZARDSPOCK":
     case "SPOCKSCISSORS":
     case "SPOCKROCK":
-        Win(playerChoice, computerChoice);
+        ;
     break;
     case "SCISSORSROCK":
     case "LIZARDROCK":

@@ -116,6 +116,24 @@ h3 {
 
 /* Play Game Page */
 /* Main */
+/* Styling the start and reset buttons */
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#start-button , #reset-button {
+    display: inline-block;
+    margin: 5px;
+}
+#start , #reset {
+    padding: 10px;
+    border: 2px solid black;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
 #play {
     margin: 30px auto;
 }
@@ -146,15 +164,6 @@ h3 {
     top: 30px;
     right: -110px;
 }
-.result {
-    font-size: 40px;
-    color: #032f3c;
-}
-.result > p {
-    text-align: center;
-    font-weight: bold;
-    color: #032f3c;
-}
 
 .options {
     text-align: center;
@@ -175,10 +184,11 @@ h3 {
 .option:hover {
     background: #FFBF00;
 }
-#message {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: "Sigmar", sans-serif ;
-    color: #032f3c;
+/* Game area styling */
+#result {
+    display: flex;
+    justify-content: center;
+}
+#result > p {
+    
 }

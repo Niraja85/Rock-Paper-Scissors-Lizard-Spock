@@ -30,6 +30,15 @@
     <h1 class="text-center" id="play">
       <p>ROCK PAPER SCISSORS LIZARD SPOCK</p></h1>
       <br>
+      <!-- Creating buttons to start and reset the game -->
+      <div id="button-container">
+        <span id="start-button">
+          <button id="start" aria-label="click on it to start">START</button>
+        </span>
+        <span id="reset-button">
+          <button id="reset" aria-label="Click to reset the game">RESET</button>
+        </span>
+      </div>
       <!-- Creating the score-board -->
       <div class="score-board">
         <div id="user-label" class="label">YOU</div>
@@ -37,9 +46,7 @@
         <span id="user-score">0</span>:<span id="computer-score">0</span>
       </div>
 
-      <div class="result">
-        <p>Rock crushes Lizard. You win!!</p>
-      </div>
+      <!-- Adding the images for rock paper scissors lizard spock-->
       <div class="options">
         <div class="option" id="rk">
           <img src="assets/images/rock.png" alt="hand in a fist image">
@@ -62,10 +69,24 @@
           <p>SPOCK</p>
         </div>
       </div>
+    <!-- Adding game area -->
+      <div id="result">
+        <p id="result-area">Click Start to begin!</p>
+      </div>
+      <div id="game-area">
+        <div class="select-game">
+          <p>PLAYER</p>
+          <div id="player-image"></div>
+        </div>
+      </div>
+      <div id="game-area">
+        <div class="select-game">
+          <p>COMPUTER</p>
+          <div id="computer-image"></div>
+        </div>
+      </div>
+      
 
-      <p id ="message">
-        SELECT YOUR MOVE. 
-      </p>
   </main>
   
   <script src="assets/js/script.js"></script>  
