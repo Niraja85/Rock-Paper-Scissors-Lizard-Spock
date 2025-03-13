@@ -15,13 +15,13 @@ const spock_div = document.getElementById("sp");
 let startButton = document.getElementById("start");
 
 startButton.addEventListener("click",function() {
-  start = 1;
-  document.getElementById("player-image").style.background = "";
-  document.getElementById("computer-image").style.background = "";
-  document.getElementById("start").style.display = "none";
-  document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
+    start = 1;
+    document.getElementById("player-image").style.background = "";
+    document.getElementById("computer-image").style.background = "";
+    document.getElementById("start").style.display = "none";
+    document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
+});
 
-  });
   let resetButton = document.getElementById("reset");
 
   resetButton.addEventListener("click",function(){
@@ -60,8 +60,8 @@ startButton.addEventListener("click",function() {
   spock_div.addEventListener("click",function(){
     if(start ===1);
     playerChoice("spock");
-    getComputerChoice();
-    game("spock");        
+    getComputerChoice();  
+    game("spock");     
   });
 
 // This function gives a random computer choice.
@@ -97,6 +97,7 @@ function getComputerChoice() {
           break;
   }
 }
+// This function shows the choices the player makes in the game area.
 function playerChoice(playerIcon) {
     switch (playerIcon) {
         case "rock":
@@ -121,8 +122,107 @@ function playerChoice(playerIcon) {
             break;
     }
   }
+// Main game function.
+function game(playerIcon){
+  switch (computerIcon) {
+    case 0:
+    if (playerIcon == "rock"){
+      resultMessage ("draw");
+    } else if (playerIcon == "paper") {
+      resultMessage ("rockpaper");
+      userScore(); 
+    } else if (playerIcon == "scissors"){
+      resultMessage ("rockscissors");
+      computerScore();
+    } else if (playerIcon == "lizard"){
+      resultMessage("rocklizard");
+      computerScore();
+    } else {
+      resultMessage("rockspock");
+      userScore();
+    }
+    break;
+    case 1:
+    if (playerIcon == "rock"){
+      resultMessage("paperrock");
+      computerScore();
+    } else if (playerIcon == "paper"){
+      resultMessage("draw");
+    } else if (playerIcon == "scissors"){
+      resultMessage("paperscissors");
+      userScore();
+    } else if (playerIcon == "lizard"){
+      resultMessage("paperlizard");
+      userScore();
+    } else {
+      resultMessage("paperspock");
+      computerScore();
+    }
+    break;
+    case 2:
+    if (playerIcon == "rock"){
+      resultMessage("scissorsrock");
+      userScore();
+    } else if (playerIcon == "paper"){
+      resultMessage("scissorspaper");
+      computerScore();
+    } else if (playerIcon == "scissors"){
+      resultMessage("draw");
+    } else if (playerIcon == "lizard"){
+      resultMessage("scissorslizard");
+      computerScore();
+    } else {
+      resultMessage("scissorsspock");
+      userScore();
+    }
+    break;
+    case 3:
+      if (playerIcon == "rock"){
+        resultMessage("lizardrock");
+        userScore();
+      } else if (playerIcon == "paper"){
+        resultMessage("lizardpaper");
+        computerScore();
+      } else if (playerIcon == "scissors"){
+        resultMessage("lizardscissors");
+        userScore();
+      } else if (playerIcon == "lizard"){
+        resultMessage("draw");
+      } else {
+        resultMessage("lizardspock");
+        computerScore();
+      }  
+      break;
+      case 4:
+        if (playerIcon == "rock"){
+          resultMessage("spockrock");
+          computerScore();
+        } else if (playerIcon == "paper"){
+          resultMessage("spockpaper");
+          userScore();
+        } else if (playerIcon == "scissors"){
+          resultMessage("spockscissors");
+          computerScore();
+        } else if (playerIcon == "lizard"){
+          resultMessage("spocklizard");
+          userScore();
+        } else {
+          resultMessage("draw");
+        }  
+        break; 
+  }
+}
+function resultMessage(resultType){
+  switch(resultType){
+  case "draw":
+  document.getElementById("result-area").style.backgroundColor = "#77B1D4";
+  document.getElementById("result-area").innerText = "Its a DRAW!!";
 
+  }
+  
 
+}
+  
  
 
 
