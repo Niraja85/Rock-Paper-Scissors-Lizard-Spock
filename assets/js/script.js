@@ -212,15 +212,98 @@ function game(playerIcon){
         break; 
   }
 }
+/** This Function take the outcome from the game function
+ * and displays the result.
+ */
+
 function resultMessage(resultType){
   switch(resultType){
   case "draw":
-  document.getElementById("result-area").style.backgroundColor = "#77B1D4";
-  document.getElementById("result-area").innerText = "Its a DRAW!!";
+    document.getElementById("result-area").style.backgroundColor = "#77B1D4";
+    document.getElementById("result-area").innerText = "Its a DRAW!!";
+  break;
+  case "rockpaper":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";  
+    document.getElementById("result-area").innerText = "Paper covers Rock. You WIN!!";  
+  break;
+  case "rockscissors":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Rock crushes Scissors. Computer Wins!!";
+  break;  
+  case "rocklizard":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Rock crushes Lizard. Computer Wins!!";
+  break;  
+  case "rockspock":   
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";  
+    document.getElementById("result-area").innerText = "Spock vaporizes Rock. You WIN!!";  
+  break;
+  case "paperrock":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";  
+    document.getElementById("result-area").innerText = "Paper covers Rock. Computer Wins!!";    
+  break;
+  case "paperscissors":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";  
+    document.getElementById("result-area").innerText = "Scissors cut Paper. You WIN!!";  
+  break;
+  case "paperlizard":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";  
+    document.getElementById("result-area").innerText = "Lizard eats Paper. You WIN!!";  
+  break;
+  case "paperspock":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";  
+    document.getElementById("result-area").innerText = "Paper disproves Spock. Computer Wins!!";  
+  break;
+  case "scissorsrock":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText = "Rock crushes Scissors. You WIN!!";
+  break;  
+  case "scissorspaper":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";  
+    document.getElementById("result-area").innerText = "Scissors cuts Paper. Computer Wins!!";  
+  break;
+  case "scissorslizard":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";  
+    document.getElementById("result-area").innerText = "Scissors decapitates Lizard. Computer Wins!!";  
+  break;
+  case "scissorsspock":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText = "Spock smashes Scissors. You WIN!!";
+  break;
+  case "lizardrock":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText = "Rock crushes Lizard. You WIN!!";
+  break;
+  case "lizardpaper":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Lizard eats Paper. Computer Wins!!";
+  break;
+  case "lizardscissors":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText ="Scissors decapitates Lizard. You WIN!!";
+  break;
+  case "lizardspock":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Lizard poisons Spock. Computer Wins!!";
+  break;
+  case "spockrock":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Spock vaporises Rock. Computer Wins!!";
+  break;
+  case "spockpaper":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText ="Paper disproves Spock. You WIN!!";
+  break;
+  case "spockscissors":
+    document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
+    document.getElementById("result-area").innerText = "Spocck smashes Scissors. Computer Wins!!";
+  break;
+  case "spocklizard":
+    document.getElementById("result-area").style.backgroundColor = "#80EF80";
+    document.getElementById("result-area").innerText ="Lizard poisons Spock. You WIN!!";
+  break;
 
   }
-  
-
 }
   
  
