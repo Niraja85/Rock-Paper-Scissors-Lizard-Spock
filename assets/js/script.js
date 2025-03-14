@@ -1,10 +1,7 @@
 // Cached the DOM so that all the variables are declared
-let userScore = 0;
-let computerScore = 0;
-const userScore_span = document.getElementById("user-score");
-const computerScore_span = document.getElementById("computer-score");
+let userScore_span = document.getElementById("user-score");
+let computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("rk");
 const paper_div = document.getElementById("pr");
 const scissors_div = document.getElementById("sr");
@@ -212,8 +209,9 @@ function game(playerIcon){
         break; 
   }
 }
-/** This Function take the outcome from the game function
- * and displays the result.
+/** This Function takes the outcome from the game function
+ * and displays the result based on the 
+ * resultMessage function.
  */
 
 function resultMessage(resultType){
@@ -305,7 +303,35 @@ function resultMessage(resultType){
 
   }
 }
-  
+function userScore(){
+  let yourScore = userScore_span.innerHTML;
+
+  if (yourScore <=11){
+    userScore_span.innerHTML = ++yourScore;
+  } else {
+    document.getElementById("result-area").innerText = "You Won! Click Reset to play again.";
+        document.getElementById("result-area").style.backgroundColor = "green";
+        document.getElementById("result-area").style.color = "white";
+        document.getElementById("reset").style.display = "";
+        document.getElementById("start").style.display = "none";
+        start = 0;
+  }
+}
+function computerScore(){
+  let cScore = computerScore_span.innerHTML;
+
+  if (cScore <=11) {
+    computerScore_span.innerHTML = ++cScore; 
+  } else {
+    document.getElementById("result-area").innerText = "Oh You Lost. Computer wins! Click Reset to play again.";
+        document.getElementById("result-area").style.backgroundColor = "red";
+        document.getElementById("result-area").style.color = "white";
+        document.getElementById("reset").style.display = "";
+        document.getElementById("start").style.display = "none";
+        start = 0;
+    }
+}
+
  
 
 
