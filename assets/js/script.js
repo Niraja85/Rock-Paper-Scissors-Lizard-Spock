@@ -303,6 +303,10 @@ function resultMessage(resultType){
 
   }
 }
+/**
+ * This function sets the score for user and computer.
+ * Also when the 12 rounds are over it resets to begin game again.
+ */
 function userScore(){
   let yourScore = userScore_span.innerHTML;
 
