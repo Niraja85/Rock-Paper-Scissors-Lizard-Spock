@@ -80,6 +80,9 @@ main {
     margin-top: 40px;
     margin-left: 80px;
 }
+h1 {
+    font-size: 28px;
+}
 h2 {
     font-size: 25px;
 }
@@ -107,13 +110,13 @@ h3 {
     }
 .blocks button {
     padding: 8px;
-    font-size: 15px;
-    color: #FF2800;
+    font-size: 20px;
+    color: black;
     font-family: "Sigmar", sans-serif;
     border-radius: 5px;
 }
 .blocks button:hover {
-    background-color: #046169;
+    background-color: #51a1a8;
     
 }
 
