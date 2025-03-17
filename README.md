@@ -149,6 +149,49 @@ Website was also opened on the following devices and no responsive issues were s
 - Samsung Galaxy S2o Ultra.
 - iPhone SE
 
+### Accessibility
+
+[Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
+
+Testing was focused to ensure the following criteria were met:
+
+- All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
+- Color contrasts meet a minimum ratio as specified in [WCAG 2.1 Contrast Guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+- Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user
+- All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions
+- All not textual content had alternative text or titles so descriptions are read out to screen readers
+- HTML page lang attribute has been set
+- Aria properties have been implemented correctly
+- WCAG 2.1 Coding best practices being followed
+
+Manual tests were also performed to ensure the website was accessible as possible and some accessibility issues were identified.
+
+Isuue 1: The color contrast for nav buttons showed poor contrast.
+Fix: Changed the font-color for better readability.
+
+Issue 2: The color contrast for start and reset buttons were poor.
+Fix: The background grey color was removed and font color changed for better contrast.
+
+Issue 3: The headings were not in the correct tags and missed the h1 tag.
+Fix: First heading was given h1 tag and 2nd heading was given h2 tag.
+
+### Validator Testing
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+![Home-Page](docs/readme_images/home-page.png)
+
+![Game-Page](docs/readme_images/play-html.png)
+
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
+
+![CSS-Validator](docs/readme_images/CSS-validation.png)  
+
+
+
+
 
 
 
