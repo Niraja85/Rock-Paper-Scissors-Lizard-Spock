@@ -16,7 +16,7 @@ startButton.addEventListener("click",function() {
     document.getElementById("player-image").style.background = "";
     document.getElementById("computer-image").style.background = "";
     document.getElementById("start").style.display = "none";
-    document.getElementById("result-area").innerText = "Make your move by choosing any of the icons above";
+    document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
 });
 
   let resetButton = document.getElementById("reset");
