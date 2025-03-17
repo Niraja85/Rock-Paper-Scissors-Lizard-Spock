@@ -141,10 +141,11 @@ h3 {
 #start , #reset {
     padding: 8px;
     border: 2px solid black;
-    background: grey;
-    color: white;
+    background: #89CFF0;
+    color: black;
     border-radius: 5px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .score-board {
