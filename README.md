@@ -112,10 +112,44 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
   - Used to commit and push code during the development of the Website
 - Font Awesome
   - Icon obtained from https://fontawesome.com/ was used for GitHub Icon in the footer.
+- Google Fonts
+ - The fonts were chosen at https://fonts.google.com/ to give the Font styles for the headings and content.
 - Favicon.io
   - favicon files were created at https://favicon.io/favicon-converter/
 - balsamiq
   - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/
+
+## Testing
+
+### Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in [WCAG 2.1 Reflow criteria for responsive design](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) on Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+1. Open browser and navigate to [Rock-Paper-Scissors-Lizard-Spock](https://niraja85.github.io/Rock-Paper-Scissors-Lizard-Spock/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
+
+Actual:
+
+Website behaved as expected.
+
+Website was also opened on the following devices and no responsive issues were seen:
+
+- Galaxy Z-Fold-5
+- Samsung Galaxy S2o Ultra.
+- iPhone SE
+
+
 
 
 

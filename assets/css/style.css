@@ -297,6 +297,9 @@ h1 > p {
     #icon > img {
         margin-left: 330px;
     }
+    #result > p {
+        height: 120px;
+    }
 }
 
     
