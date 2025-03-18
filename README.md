@@ -189,6 +189,48 @@ Fix: First heading was given h1 tag and 2nd heading was given h2 tag.
 
 ![CSS-Validator](docs/readme_images/CSS-validation.png)  
 
+-Javascript
+
+
+### Lighthouse Report
+
+![Home-page](docs/readme_images/lighthouse-home.png)
+
+![Game-page](docs/readme_images/lighthouse-play.png)
+
+## Deployment
+
+### Version Control
+
+The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘Portfolio-Project-2-Rock-Paper-Scissors-Lizard-Spock’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+### Deployment to Github Pages
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully.
+
+The live link can be found here - https://niraja85.github.io/Rock-Paper-Scissors-Lizard-Spock/
+
+## Credits
+
+* The images and ideas for coding were taken from [This-Github-page.](https://github.com/TR94/rock-paper-scissors-lizard-spock?tab=readme-ov-file)
+* The ideas of coding the score-board was taken from [This YouTube tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+* The logo and diagram information about the game was taken from Google.
+
+
+
 
 
 
