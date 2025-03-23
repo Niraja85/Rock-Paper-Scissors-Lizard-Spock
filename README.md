@@ -196,11 +196,50 @@ Fix: First heading was given h1 tag and 2nd heading was given h2 tag.
 ![JavaScript-Validator](docs/readme_images/Java-validation-testing.png)
 
 
+
 ### Lighthouse Report
 
 ![Home-page](docs/readme_images/lighthouse-home.png)
 
 ![Game-page](docs/readme_images/lighthouse-play.png)
+
+### Functional Testing
+
+* Navigation Links
+
+Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page as shown below:
+
+Home page - index.html Play page - play.html 
+
+Links on all pages navigated to the correct pages as exptected.
+
+* Play Game button
+     * Play game button on the home page lets the user navigate to the play page directly after the game instructions are read. Play Game button navigates to play.html.
+Link navigated to the correct page as expected.
+
+* Start Button
+    * The start button when clicked begins the game, and only then the player can make his/her choices. The scores also start increasing based on the result comparison between player and computer.
+The start button functioned as expected.
+
+* Reset button
+    * The reset button can be clicked at the end of the game to begin the game again,, or to restart at any other point. This sets the scores to 0 for both, computer and player.
+The reset button functioned as expected.
+
+* Icons selected by player
+     * Rock : When clicked on rock by the player, the correct image of rock is displayed in the "You" gaming section.
+     The link functioned as expected.
+    
+    * Paper : When clicked on paper by the player, the correct image of paper is displayed in the "You"  gaming section.
+    The Link functioned as expected.
+
+    * Scissors : When clicked on scissors by the player, the correct image of scissors is displayed in the "You"  gaming section.
+    The Link functioned as expected.
+
+    * Lizard : When clicked on lizard by the player, the correct image of lizard is displayed in the "You"  gaming section.
+    The Link functioned as expected.
+
+    * Spock : When clicked on spock by the player, the correct image of spock is displayed in the "You"  gaming section.
+    The Link functioned as expected.
 
 ## Deployment
 
