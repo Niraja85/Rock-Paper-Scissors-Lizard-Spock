@@ -7,6 +7,7 @@ const paper_div = document.getElementById("pr");
 const scissors_div = document.getElementById("sr");
 const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
+var start = 0;
 
 // Adding event listener to start and reset button
 let startButton = document.getElementById("start");
@@ -18,48 +19,63 @@ startButton.addEventListener("click",function() {
     document.getElementById("start").style.display = "none";
     document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
 });
+// Adding event listener to reset button
 let resetButton = document.getElementById("reset");
 
   resetButton.addEventListener("click",function(){
     location.reload();
 
   });
-  //Adding Event listeners to the icons for player's choices
+
+  /* Adding Event listeners to the player choices
+  * and adding run game functions
+  */
+
   rock_div.addEventListener("click",function(){
+    if (start ===1){
     playerChoice("rock");
     getComputerChoice();
     game("rock");
+    }
   });
 
   paper_div.addEventListener("click",function(){
+    if (start === 1){
     playerChoice("paper");
     getComputerChoice();
     game("paper");
+    }
   });
 
   scissors_div.addEventListener("click",function(){
+    if (start === 1){
     playerChoice("scissors");
     getComputerChoice();
     game("scissors");
+    }
   });
 
   lizard_div.addEventListener("click",function(){
+    if (start === 1){
     playerChoice("lizard");
     getComputerChoice();
     game("lizard");
+    }
   });
 
   spock_div.addEventListener("click",function(){
+    if (start === 1){
     playerChoice("spock");
     getComputerChoice();  
-    game("spock");     
+    game("spock");  
+    }   
   });
 
 // This function gives a random computer choice.
 function getComputerChoice() {
     
   computerIcon = Math.floor(Math.random() * 5);
-  
+
   switch (computerIcon) {
     case 0:
         document.getElementById('computer-image').innerText = "";
@@ -289,7 +305,7 @@ function resultMessage(resultType){
   break;
   case "spockscissors":
     document.getElementById("result-area").style.backgroundColor = "#CD5C5C";
-    document.getElementById("result-area").innerText = "Spocck smashes Scissors. Computer Wins!!";
+    document.getElementById("result-area").innerText = "Spock smashes Scissors. Computer Wins!!";
   break;
   case "spocklizard":
     document.getElementById("result-area").style.backgroundColor = "#80EF80";
