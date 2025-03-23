@@ -189,7 +189,11 @@ Fix: First heading was given h1 tag and 2nd heading was given h2 tag.
 
 ![CSS-Validator](docs/readme_images/CSS-validation.png)  
 
--Javascript
+- Javascript
+    - No errors were returned when passing through the [JShint validator](https://jshint.com/)
+    - One warning appears for undefined variable computerIcon, but it is defined as random choice to be selected by the computer.
+
+![JavaScript-Validator](docs/readme_images/Java-validation-testing.png)
 
 
 ### Lighthouse Report

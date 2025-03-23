@@ -1,7 +1,6 @@
 // Cached the DOM so that all the variables are declared
 let userScore_span = document.getElementById("user-score");
 let computerScore_span = document.getElementById("computer-score");
-const scoreBoard_div = document.querySelector(".score-board");
 const rock_div = document.getElementById("rk");
 const paper_div = document.getElementById("pr");
 const scissors_div = document.getElementById("sr");
@@ -9,10 +8,10 @@ const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
 var start = 0;
 
-// Adding event listener to start and reset button
+// Adding event listener to start button
 let startButton = document.getElementById("start");
 
-startButton.addEventListener("click",function() {
+startButton.addEventListener ("click", function() {
     start = 1;
     document.getElementById("player-image").style.background = "";
     document.getElementById("computer-image").style.background = "";
