@@ -319,10 +319,10 @@ function resultMessage(resultType){
  * Also when the 12 rounds are over it resets to begin game again.
  */
 function userScore(){
-  let yourScore = userScore_span.innerHTML;
+  let yourScore = userScore_span.innerText;
 
   if (yourScore <=11){
-    userScore_span.innerHTML = ++yourScore;
+    userScore_span.innerText = ++yourScore;
   } else {
     document.getElementById("result-area").innerText = "You Won! Click Reset to play again.";
         document.getElementById("result-area").style.backgroundColor = "green";
@@ -333,10 +333,10 @@ function userScore(){
   }
 }
 function computerScore(){
-  let cScore = computerScore_span.innerHTML;
+  let cScore = computerScore_span.innerText;
 
   if (cScore <=11) {
-    computerScore_span.innerHTML = ++cScore; 
+    computerScore_span.innerText = ++cScore; 
   } else {
     document.getElementById("result-area").innerText = "Oh You Lost. Computer wins! Click Reset to play again.";
         document.getElementById("result-area").style.backgroundColor = "red";

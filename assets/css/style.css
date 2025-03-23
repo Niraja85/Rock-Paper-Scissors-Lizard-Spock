@@ -294,7 +294,7 @@ h1 > p {
 /* Large screens (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px){
     #icon > img {
-        margin-left: 330px;
+        margin-left: 350px;
     }
     #result > p {
         height: 120px;
