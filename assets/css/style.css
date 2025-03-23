@@ -134,11 +134,11 @@ h3 {
     justify-content: center;
     margin: auto;
 }
-#start-button , #reset-button {
+ #start-button, #reset-button {
     display: inline-block;
     margin: 5px;
 }
-#start , #reset {
+ #start, #reset {
     padding: 8px;
     border: 2px solid black;
     color: blue;
@@ -211,7 +211,7 @@ h3 {
 #game-area {
     display: flex;
     justify-content: center;
-    margin: 80px 70px;
+    margin: 10px 70px;
 }
 .select-game > p {
     text-align: center;

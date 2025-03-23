@@ -8,7 +8,7 @@ const scissors_div = document.getElementById("sr");
 const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
 
-// Adding event listener to start button
+// Adding event listener to start and reset button
 let startButton = document.getElementById("start");
 
 startButton.addEventListener("click",function() {
@@ -18,8 +18,7 @@ startButton.addEventListener("click",function() {
     document.getElementById("start").style.display = "none";
     document.getElementById("result-area").innerText = "Make your move by choosing any of the icons";
 });
-
-  let resetButton = document.getElementById("reset");
+let resetButton = document.getElementById("reset");
 
   resetButton.addEventListener("click",function(){
     location.reload();
@@ -27,35 +26,30 @@ startButton.addEventListener("click",function() {
   });
   //Adding Event listeners to the icons for player's choices
   rock_div.addEventListener("click",function(){
-    if(start ===1);
     playerChoice("rock");
     getComputerChoice();
     game("rock");
   });
 
   paper_div.addEventListener("click",function(){
-    if(start ===1);
     playerChoice("paper");
     getComputerChoice();
     game("paper");
   });
 
   scissors_div.addEventListener("click",function(){
-    if(start ===1);
     playerChoice("scissors");
     getComputerChoice();
     game("scissors");
   });
 
   lizard_div.addEventListener("click",function(){
-    if(start ===1);
     playerChoice("lizard");
     getComputerChoice();
     game("lizard");
   });
 
   spock_div.addEventListener("click",function(){
-    if(start ===1);
     playerChoice("spock");
     getComputerChoice();  
     game("spock");     
@@ -65,35 +59,36 @@ startButton.addEventListener("click",function() {
 function getComputerChoice() {
     
   computerIcon = Math.floor(Math.random() * 5);
- 
+  
   switch (computerIcon) {
-      case 0:
-          document.getElementById('computer-image').innerText = "";
-          document.getElementById('computer-image').style.background="url(assets/images/rock.png)";
-          document.getElementById('computer-image').style.backgroundSize="cover";
-          break;
-      case 1:
-          document.getElementById('computer-image').innerText = "";
-          document.getElementById('computer-image').style.background="url(assets/images/paper.png)";
-          document.getElementById('computer-image').style.backgroundSize="cover";
-          break;
-      case 2:
-          document.getElementById('computer-image').innerText = "";
-          document.getElementById('computer-image').style.background="url(assets/images/scissors.png)";
-          document.getElementById('computer-image').style.backgroundSize="cover";
-          break; 
-      case 3:
-          document.getElementById('computer-image').innerText = "";    
-          document.getElementById('computer-image').style.background="url(assets/images/lizard.png)";
-          document.getElementById('computer-image').style.backgroundSize="cover";
-          break;
-      case 4:
-          document.getElementById('computer-image').innerText = "";
-          document.getElementById('computer-image').style.background="url(assets/images/spock.png)";
-          document.getElementById('computer-image').style.backgroundSize="cover";
-          break;
-  }
+    case 0:
+        document.getElementById('computer-image').innerText = "";
+        document.getElementById('computer-image').style.background="url(assets/images/rock.png)";
+        document.getElementById('computer-image').style.backgroundSize="cover";
+        break;
+    case 1:
+        document.getElementById('computer-image').innerText = "";
+        document.getElementById('computer-image').style.background="url(assets/images/paper.png)";
+        document.getElementById('computer-image').style.backgroundSize="cover";
+        break;
+    case 2:
+        document.getElementById('computer-image').innerText = "";
+        document.getElementById('computer-image').style.background="url(assets/images/scissors.png)";
+        document.getElementById('computer-image').style.backgroundSize="cover";
+        break; 
+    case 3:
+        document.getElementById('computer-image').innerText = "";    
+        document.getElementById('computer-image').style.background="url(assets/images/lizard.png)";
+        document.getElementById('computer-image').style.backgroundSize="cover";
+        break;
+    case 4:
+        document.getElementById('computer-image').innerText = "";
+        document.getElementById('computer-image').style.background="url(assets/images/spock.png)";
+        document.getElementById('computer-image').style.backgroundSize="cover";
+        break;
 }
+}
+  
 // This function shows the choices the player makes in the game area.
 function playerChoice(playerIcon) {
     switch (playerIcon) {
