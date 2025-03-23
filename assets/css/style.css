@@ -237,6 +237,11 @@ h3 {
     height: 150px;
     width: 150px;
 }
+
+/* 404 error page */
+#error {
+    padding-top: 10%;
+}
 /* Adding media query for tablets and larger screens of 768 px and up */
 @media  screen and (min-width: 768px) {
     /* Home Page */
