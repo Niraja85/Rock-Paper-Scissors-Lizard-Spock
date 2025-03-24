@@ -271,6 +271,7 @@ The live link can be found here - https://niraja85.github.io/Rock-Paper-Scissors
 * The images and ideas for coding were taken from [This-Github-page.](https://github.com/TR94/rock-paper-scissors-lizard-spock?tab=readme-ov-file)
 * The ideas of coding the score-board was taken from [This YouTube tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0)
 * The logo and diagram information about the game was taken from Google.
+* I would like to extend my thanks to my mentor Gareth Mc.Girr for his constant support and suggestions to improve the projects.
 
 
 
