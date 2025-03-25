@@ -17,6 +17,12 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
     * This will provide an image in the tabs header which in turn will help the users identify the page when they have several tabs opened.
 
 ![Favicon](docs/readme_images/Favicon.png)   
+ 
+* 404 Page
+    * A 404 page will be implemented and will display if a user navigates to a broken link.
+    * The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need of the browsers back button.
+
+![404-error](docs/readme_images/404-error.png)    
 
 ### Home Page
 
