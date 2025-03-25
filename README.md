@@ -10,7 +10,7 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
     * Contains links to Home page and Game page and is responsive on all screen sizes.
     * This will help the player navigate easily between the pages on all screen sizes.
 
-![Navigation](docs/readme_images/Navigation.png)    
+![Navigation](docs/readme_images/nav-link.png)    
 
 * Favicon
     * A site wide Favicon will be implemented with a galaxy sign of rock paper scissor lizard spock game.
@@ -43,7 +43,7 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
     * A button will be on the home page that when clicked will direct the user to the main game.
     * This will allow the user to start the game after they have read and understood how the game works.
 
-![PlayGame](docs/readme_images/Play-button.png)  
+![PlayGame](docs/readme_images/play-game-button.png)  
 
 ### Game Page
 
@@ -119,11 +119,13 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
 - Font Awesome
   - Icon obtained from https://fontawesome.com/ was used for GitHub Icon in the footer.
 - Google Fonts
- - The fonts were chosen at https://fonts.google.com/ to give the Font styles for the headings and content.
+   - The fonts were chosen at https://fonts.google.com/ to give the Font styles for the headings and content.
 - Favicon.io
-  - favicon files were created at https://favicon.io/favicon-converter/
-- balsamiq
-  - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/
+  - Favicon files were created at https://favicon.io/favicon-converter/
+- Tinypng and Convertio 
+  - [Tinypng](https://tinypng.com/) was used to convert the images to png format and [Convertio](https://convertio.co/) was used to convert few images to webp format.
+- Balsamiq
+  - Wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/
 
 ## Testing
 
@@ -200,8 +202,6 @@ Fix: First heading was given h1 tag and 2nd heading was given h2 tag.
 
 ![JavaScript-Validator](docs/readme_images/JavaScript-Validator.png)
 
-
-
 ### Lighthouse Report
 
 ![Home-page](docs/readme_images/lighthouse-home.png)
@@ -249,30 +249,32 @@ The reset button functioned as expected.
 * Message display while playing
     * First Scenario:
         * If the player chooses 'rock' and the computer selection is 'paper', then the message displayed is "Paper covers rock. Computer wins!!" and the color of the message area box changes to red for "Computer's win.
+        * The message was displayed as expected.
 
     ![Computer wins](docs/readme_images/Message1.png)
 
     * Second Scenario:
         * If the player chooses 'lizard' and the computer chooses 'paper' then the message displayed is "Lizard eats paper.You win!!" and the color of the message area box changes to green for all player wins.
+        * The message was displayed as expected.
     ![Player wins](docs/readme_images/Message2.png)   
 
     * Third Scenario: 
         * If both the player and computer choices are same, for example both chose 'lizard' then the message displayed is "Its a Draw!!" and the color of the message area box changes to light blue in color.
+        * The message was displayed as expected.
 
     ![Draw](docs/readme_images/Message3.png)    
 
     * Fourth Scenario:
         * When the Player wins (after completeing 12 points first), then the message displayed is "You Won. Click Reset to play again" and the color of the message area is green.
+        * The message was displayed as expected.
 
     ![Player-Win](docs/readme_images/Player-win.png)    
 
     * Fifth Scenario:
         * When the computer wins the message displayed is "Oh you lost. Computer wins. Click reset to play again" and the color of the message area box is red.
+        * The message was displayed as expected.
 
     ![Computer-win](docs/readme_images/Comp-win.png)    
-
-
-
 
 ## Deployment
 

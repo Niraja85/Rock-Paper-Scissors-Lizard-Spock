@@ -290,7 +290,6 @@ h1 > p {
     width: 300px;
     padding: 30px;
 }
-
 }
 /* Adding media query for larger screens (Laptops and desktops 992 px and up) */
 @media screen and (min-width: 992px) {
@@ -315,8 +314,6 @@ h1 > p {
         padding: 40px;
         font-size: 20px;
     }
-     
-
 }
 /* Large screens (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px){
@@ -329,8 +326,7 @@ h1 > p {
     /* Game page styling */
     .option {
         width: 10%;
-    }
-         
+    }       
 }
 
     
