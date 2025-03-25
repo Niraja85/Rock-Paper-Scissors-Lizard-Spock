@@ -326,7 +326,12 @@ h1 > p {
     /* Game page styling */
     .option {
         width: 10%;
-    }       
+    }    
+    #result > p {
+        height: 150px;
+        width: 300px;
+        padding: 50px;
+        font-size: 20px;   
 }
 
     
