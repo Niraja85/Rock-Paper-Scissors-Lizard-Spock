@@ -66,7 +66,7 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
     
 * Message area
     * The box shows the message displayed based on game rules after comparing player and computer choices.
-    * If its a draw the box coloe changes to blue, if player wins, the color is green, and if player loses, it#s color is red.
+    * If its a draw the box color changes to blue, if player wins, the color is green, and if player loses, it's color is red.
     * It also displays the message of winning or losing once either of the side has reached 12 points, and directs to click on "Reset" button to begin again.
 
  ![Display-1](docs/readme_images/display-1.png)   
@@ -90,7 +90,7 @@ Rock Paper Scissors Lizard Spock is a game developed to complete the Project por
 
 * Home page 
 
-![Hone](docs/readme_images/bal-wf.png)
+![Home](docs/readme_images/bal-wf.png)
 
 * Game Page
 
@@ -239,6 +239,34 @@ The reset button functioned as expected.
 
     * Spock : When clicked on spock by the player, the correct image of spock is displayed in the "You"  gaming section.
     The Link functioned as expected.
+
+* Message display while playing
+    * First Scenario:
+        * If the player chooses 'rock' and the computer selection is 'paper', then the message displayed is "Paper covers rock. Computer wins!!" and the color of the message area box changes to red for "Computer's win.
+
+    ![Computer wins](docs/readme_images/Message1.png)
+
+    * Second Scenario:
+        * If the player chooses 'lizard' and the computer chooses 'paper' then the message displayed is "Lizard eats paper.You win!!" and the color of the message area box changes to green for all player wins.
+    ![Player wins](docs/readme_images/Message2.png)   
+
+    * Third Scenario: 
+        * If both the player and computer choices are same, for example both chose 'lizard' then the message displayed is "Its a Draw!!" and the color of the message area box changes to light blue in color.
+
+    ![Draw](docs/readme_images/Message3.png)    
+
+    * Fourth Scenario:
+        * When the Player wins (after completeing 12 points first), then the message displayed is "You Won. Click Reset to play again" and the color of the message area is green.
+
+    ![Player-Win](docs/readme_images/Player-win.png)    
+
+    * Fifth Scenario:
+        * When the computer wins the message displayed is "Oh you lost. Computer wins. Click reset to play again" and the color of the message area box is red.
+
+    ![Computer-win](docs/readme_images/Comp-win.png)    
+
+
+
 
 ## Deployment
 
