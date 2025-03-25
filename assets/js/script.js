@@ -1,4 +1,7 @@
-// Cached the DOM so that all the variables are declared
+/**
+ * Cached the DOM so that all the 
+* variables are declared
+*/
 let userScore_span = document.getElementById("user-score");
 let computerScore_span = document.getElementById("computer-score");
 const rock_div = document.getElementById("rk");
@@ -27,7 +30,8 @@ let resetButton = document.getElementById("reset");
 
   });
 
-  /* Adding Event listeners to the player choices
+  /**
+  * Adding Event listeners to the player choices
   * and adding run game functions
   */
 
@@ -71,7 +75,9 @@ let resetButton = document.getElementById("reset");
     }   
   });
 
-// This function gives a random computer choice.
+/**
+ * This function gives a random computer choice.
+ */
 function getComputerChoice() {
     
   computerIcon = Math.floor(Math.random() * 5);
@@ -105,7 +111,9 @@ function getComputerChoice() {
 }
 }
   
-// This function shows the choices the player makes in the game area.
+/**
+ * This function shows the choices the player makes in the game area.
+ */
 function playerChoice(playerIcon) {
     switch (playerIcon) {
         case "rock":
@@ -220,7 +228,8 @@ function game(playerIcon){
         break; 
   }
 }
-/** This Function takes the outcome from the game function
+/**
+ * This Function takes the outcome from the game function
  * and displays the result based on the 
  * resultMessage function.
  */
