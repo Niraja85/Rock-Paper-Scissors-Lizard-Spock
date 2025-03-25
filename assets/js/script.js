@@ -6,7 +6,8 @@ const paper_div = document.getElementById("pr");
 const scissors_div = document.getElementById("sr");
 const lizard_div = document.getElementById("lz");
 const spock_div = document.getElementById("sp");
-var start = 0;
+let start = 0;
+let computerIcon = 0;
 
 // Adding event listener to start button
 let startButton = document.getElementById("start");
