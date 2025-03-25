@@ -321,9 +321,10 @@ function resultMessage(resultType){
 function userScore(){
   let yourScore = userScore_span.innerText;
 
-  if (yourScore <=11){
+  if (yourScore < 11){
     userScore_span.innerText = ++yourScore;
   } else {
+    userScore_span.innerText = ++yourScore;
     document.getElementById("result-area").innerText = "You Won! Click Reset to play again.";
         document.getElementById("result-area").style.backgroundColor = "green";
         document.getElementById("result-area").style.color = "white";
@@ -335,9 +336,10 @@ function userScore(){
 function computerScore(){
   let cScore = computerScore_span.innerText;
 
-  if (cScore <=11) {
+  if (cScore < 11) {
     computerScore_span.innerText = ++cScore; 
   } else {
+    computerScore_span.innerText = ++cScore;
     document.getElementById("result-area").innerText = "Oh You Lost. Computer wins! Click Reset to play again.";
         document.getElementById("result-area").style.backgroundColor = "red";
         document.getElementById("result-area").style.color = "white";
